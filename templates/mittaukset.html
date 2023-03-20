@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>/Mittaustiedot</title>
+    <title>Mittaustiedot</title>
 </head>
-<body style="font-family:verdana"
+
+<body style="font-family:verdana">
 <div class="app">
     <h1>Mittaukset</h1>
     <table>
@@ -11,13 +12,14 @@
             <th>Päivä</th>
             <th>Mittaus</th>
         </tr>
-        {% for mittaus in taulukko}
+        {% for mittaus in taulukko %}
             <tr>
-                <td>{{ paivat [mittaus.x-1]}}</td>
+                <td>{{ paivat[mittaus.x-1] }}</td>
                 <td>{{ mittaus.y }}</td>
-            <tr>
+            </tr>
         {% endfor %}
-
-
     </table>
+</div>
+</body>
+
 </html>
